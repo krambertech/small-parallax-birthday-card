@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy birthday</title>
+
+    <!-- JQUERY -->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- MATERIALIZE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <!-- FLIP CLOCK -->
+    <link rel="stylesheet" href="lib/flipclock.css">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="parallax-container">
+    <div class="parallax">
+        <video autoplay loop poster="img/lviv2.jpg" id="bgvid">
+            <source src="img/lviv.webm" type="video/webm">
+            <source src="img/lviv.mp4" type="video/mp4">
+        </video>
+        <div class="promo">
+            <h1> Adwenture starts in</h1>
+            <div class="countdown"> </div>
+        </div>
+    </div>
+  </div>
+
+    <div class="section white">
+        <div class="row container greeting">
+            <h2 class="header red-text text-lighten-2">Солнце!</h2>
+            <blockquote class="grey-text text-darken-3 lighten-3">
+                Я поздравляю тебя с днем рождения, ты у меня самый-самый лучший, самый-самый любимый и самый-самый замечательный. Я хочу, чтобы все твои желания сбывались как можно быстрее, чтобы все планы воплощались в жизнь, все и всегда получалось и в жизни тебя окружали только те люди, при виде которых тебе не хочется спрятаться под стол :)
+
+                Побольше приятных пробуждений, вкусных завтраков, страстных поцелуев и дней, которые слишком быстро кончаются.
+            </blockquote>
+          <p class="from-line">Катя   <i class="fa fa-heart"> </i></p>
+        </div>
+    </div>
+
+    <div class="parallax-container">
+    <div class="parallax">
+        <img src="img/lviv2.jpg">
+    </div>
+  </div>
+
+    <div class="section red lighten-2">
+        <div class="row container present">
+            <h2 class="header white-text">А подарок?</h2>
+            <p class="white-text">
+                <i class="fa fa-train"> </i> <b>06/11</b> - <b>06/13</b> <i class="fa fa-long-arrow-right"></i> Львов!
+            </p>
+            <div class="map">
+                <img id="map-image" src="img/map-dotted.png" width="500" >
+                <label id="kiev"> Киев </label>
+                <label id="lviv"> Львов </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="parallax-container">
+    <div class="parallax">
+        <img src="img/lviv3.jpg">
+    </div>
+  </div>
+
+    <div class="section white">
+        <div class="row container timetable">
+            <h2 class="header red-text text-lighten-2">Что да как</h2>
+            <ul class="plan" id="time-list">
+                <li class="date">
+                    ПТ 06/10
+                </li>
+
+                <li class="line">
+                    <i class="fa fa-train"></i>
+                    <span class="time">22:40</span>
+                    <span class="what">Поезд #091 Киев - Львов </span>
+                </li>
+
+                <li class="date">
+                    СБ 06/11
+                </li>
+
+                <li class="line">
+                    <i class="fa fa-train"></i>
+                    <span class="time">06:25</span>
+                    <span class="what">Мы во Львове </span>
+                </li>
+
+                <li class="comment">
+                    <i>// c этого момента перехожу на украинский</i>
+                </li>
+
+                <li class="line">
+                    <i class="fa fa-cutlery"></i>
+                    <span class="time">07:00</span>
+                    <span class="what">Філіжаночку львівської кави?</span>
+                </li>
+
+                <li class="line">
+                    <i class="fa fa-map-marker"></i>
+                    <span class="time">08:00</span>
+                    <span class="what">Їдемо на центральну площу Львова - площу Ринок</span>
+                </li>
+
+                <li class="line">
+                    <i class="fa fa-street-view"></i>
+                    <span class="time">08:30 - 12:00</span>
+                    <span class="what">Гуляємо площею</span>
+                </li>
+
+                <li class="line">
+                    <i class="fa fa-home"></i>
+                    <span class="time">12:00</span>
+                    <span class="what">Їдемо в нашу зашибєзну квартиру, залишаємо речі, душ?</span>
+                </li>
+
+                <li class="line">
+                    <i class="fa fa-cutlery"></i>
+                    <span class="time">13:00</span>
+                    <span class="what">Обідаємо</span>
+                </li>
+
+                <li class="line">
+                    <i class="fa fa-eye"></i>
+                    <span class="time">14:00</span>
+                    <span class="what">Піднімаємося на Високий замок, насолоджуємося міським пейзажем</span>
+                </li>
+
+                <li class="line">
+                    <i class="fa fa-street-view"></i>
+                    <span class="time">16:00</span>
+                    <span class="what">Йдемо в центр, гуляємо вузькими Львівськими вулочками</span>
+                </li>
+
+                <li class="line">
+                    <i class="fa fa-cutlery"></i>
+                    <span class="time">19:00</span>
+                    <span class="what">Вечеряємо в <a href="http://www.fest.lviv.ua/uk/restaurants/dimlegend/">Домі Легенд</a> </span>
+                </li>
+
+                <li class="line">
+                    <i class="fa fa-heart"></i>
+                    <span class="time">20:00</span>
+                    <span class="what">Вечірня прогулянка центром</span>
+                </li>
+
+                <li class="line">
+                    <i class="fa fa-bed"></i>
+                    <span class="time">23:00</span>
+                    <span class="what">Повертаємось до нашої зашибєзної квартири, час спати?</span>
+                </li>
+
+                <li class="date">
+                    НД 06/12
+                </li>
+
+                <li class="comment">
+                    <i>// cьогодні у нас день активного відпочинку</i>
+                </li>
+
+                <li class="line">
+                    <i class="fa fa-heart"></i>
+                    <span class="time">07:00</span>
+                    <span class="what">Сніданок у ліжко?</span>
+                </li>
+
+                <li class="line">
+                    <i class="fa fa-map-marker"></i>
+                    <span class="time">08:00</span>
+                    <span class="what">Релокуємося у <a href="http://www.viking.com.ua/">Бухту Вікінгів</a></span>
+                </li>
+
+                <li class="comment">
+                    <i>// тут на нас чекає надзвичайна природа, прогулянки на конях, мотузковий парк та затишне озеро</i>
+                </li>
+
+                <li class="line">
+                    <i class="fa fa-flag"></i>
+                    <span class="time">10:00</span>
+                    <span class="what">Проходимо найскладнішу трасу в мотузковому парку</span>
+                </li>
+
+                <li class="line">
+                    <i class="fa fa-paw"></i>
+                    <span class="time">12:00</span>
+                    <span class="what">Прогулянка на конях по лісу</span>
+                </li>
+
+                <li class="line">
+                    <i class="fa fa-cutlery"></i>
+                    <span class="time">14:00</span>
+                    <span class="what">Пікнік на галявині</span>
+                </li>
+
+                <li class="line">
+                    <i class="fa fa-sun-o"></i>
+                    <span class="time">15:00</span>
+                    <span class="what">Купаємося в озері, відлежуємося на пляжі, засмагаємо</span>
+                </li>
+
+                <li class="line">
+                    <i class="fa fa-bus"></i>
+                    <span class="time">18:00</span>
+                    <span class="what">Повертаємося до міста</span>
+                </li>
+
+                <li class="line">
+                    <i class="fa fa-street-view"></i>
+                    <span class="time">20:00</span>
+                    <span class="what">Ввечері гуляємо Львовом</span>
+                </li>
+
+                <li class="line">
+                    <i class="fa fa-bed"></i>
+                    <span class="time">23:00</span>
+                    <span class="what">Спати?</span>
+                </li>
+
+                <li class="date">
+                    ПН 06/13
+                </li>
+
+                <li class="comment">
+                    <i>// наш останній день у Львові, ніяких планів</i>
+                </li>
+
+                <li class="line">
+                    <i class="fa fa-question"></i>
+                    <span class="time">. . .</span>
+                </li>
+
+                <li class="line">
+                    <i class="fa fa-train"></i>
+                    <span class="time">22:55</span>
+                    <span class="what">Поїзд #092 Львів - Київ </span>
+                </li>
+
+                <li class="date">
+                    ВТ 06/14
+                </li>
+
+                <li class="line">
+                    <i class="fa fa-home"></i>
+                    <span class="time">06:40</span>
+                    <span class="what">Мы дома </span>
+                </li>
+
+                <li class="comment">
+                    <i></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+  <div class="section white">
+    <div class="row container live">
+        <h2 class="header red-text text-lighten-2"> Чим така "зашибєзна" ? </h2>
+        <div class="flat-pics">
+            <img class="materialboxed flat-pic" id="pic-flat1" width="450" src="img/flat1.jpg">
+            <img class="materialboxed flat-pic" id="pic-flat3" width="450" src="img/flat3.jpg">
+            <img class="materialboxed flat-pic" id="pic-flat4" width="450" src="img/flat4.jpg">
+            <img class="materialboxed flat-pic" id="pic-flat5" width="450" src="img/flat5.jpg">
+        </div>
+    </div>
+  </div>
+
+  <div class="section white">
+    <div class="row container footer">
+        <p class="grey-text"> C днем рождения </p>
+        <p class="red-text text-lighten-2"> <i class="fa fa-heart"></i>  <i class="fa fa-heart"></i>  <i class="fa fa-heart"></i> </p>
+    </div>
+  </div>
+
+
+    <script src="lib/flipclock.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
